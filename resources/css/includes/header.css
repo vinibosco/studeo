@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Edu+SA+Beginner:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* 
+
+Cormorant SC:
+font-family: 'Cormorant SC', serif;
+
+Edu SA Beginner:
+font-family: 'Edu SA Beginner', cursive; 
+
+*/
+
+@font-face{
+    font-family: "Sansation";
+    src: url("/fonts/Sansation_Regular.ttf");
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(66, 66, 66);
+    border-radius: 10px;
+}
+body, html, *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Sansation";
+    overflow-x: hidden;
+}
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(201,201,201,1) 100%);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 150px;
+}
+header{
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 900;
+}
+
+.botao-menu img{
+    border-radius: 100%;
+    width: 44px;
+    height: 44px;
+}
+
+.pesquisar-menu{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    border-radius: 90px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    padding: 4px 24px;
+    height: 34px;
+
+    align-content: center;
+    align-items: center;
+}
+.pesquisar-menu div{
+    display: grid;
+}
+.pesquisar-menu input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 300px;
+
+    color: #979797;
+}
+.pesquisar-menu i{
+    color: #979797;
+}
+
+.perfil-menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.perfil-menu a{
+    border-radius: 40px;
+    background: #FCA311;
+
+    padding: 6px 18px;
+    color: white;
+}
+header a{
+    color: black;
+    text-decoration: none;
+}
+
+.invisivel{
+    display: none;
+}
